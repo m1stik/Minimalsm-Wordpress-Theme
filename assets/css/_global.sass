@@ -1,0 +1,280 @@
+nav ul li
+    list-style: none
+    display: inline-block
+li
+    margin-top: 5px
+    margin-bottom: 5px
+.logo
+    font-family: 'Comfortaa', cursive
+    font-size: 60px
+    color: #464646
+    margin: 70px 0 50px 0
+a, p, b, strong, span
+    font-size: 17px
+    font-family: 'Open Sans', sans-serif
+    transition-duration: 0.4s
+.first-bar
+    height: 50px
+.secondary-menu ul li, .main-menu ul li, .social-menu a
+    margin-left: 18px
+    text-transform: uppercase
+    &:first-child
+        margin-left: 0
+.main-menu
+    margin-bottom: 16px
+.second-bar
+    height: 50px
+    text-transform: uppercase
+.article
+    text-transform: uppercase
+    border: 1px solid $m-dark
+h2, h1
+    font-size: 23px
+    font-weight: 100
+    letter-spacing: 4px
+    margin: 10px 0
+    text-transform: uppercase
+.thumbnail
+    img
+        width: 100%
+        height: 280px
+        object-fit: cover
+.no-gutters
+    margin-left: 0
+    margin-right: 0
+    &>.col
+        padding-left: 0
+        padding-right: 0
+.article-meta .col a, .article-meta .col p
+    padding: 18px 0
+    display: block
+.article-meta-link
+    background: $m-black
+    height: auto
+    a
+        color: $m-white
+        &:hover
+            color: $m-dark
+footer
+    padding: 35px 0 25px 0
+    p
+        margin-top: 10px
+article
+    margin: 20px 0 65px 0
+article.full-post
+        margin-bottom: 0px
+.post h1
+    margin-bottom: 15px
+.post-meta
+    text-transform: uppercase
+    p
+        padding: 15px 0
+.post-tags
+    padding: 20px 0 20px 0
+.post-thumbnail
+    img
+        width: 100%
+        height: 370px
+        object-fit: cover
+.feautured-img
+    img
+        width: 100%
+        object-fit: cover
+        height: 370px
+        margin-bottom: 25px
+.content
+    margin-top: 5px
+    text-align: justify
+    p
+        margin: 15px 0
+        font-family: Calibri
+        line-height: 1.5
+.menu-frame
+    position: absolute
+    width: 100vw
+    height: 100vh
+    background: #fff
+    top: 0px
+    left: 0px
+    display: none
+    z-index: 10
+    text-align: center
+    text-transform: uppercase
+    .menu
+        .sub-menu
+            display: block
+            position: relative
+            opacity: 1
+            li
+                text-align: center
+                background: none
+                width: auto
+                height: auto
+                padding: 10px 0 0 0
+                text-transform: capitalize
+    a
+        font-size: 18px
+        color: $m-dark
+    li
+        margin: 25px 0
+    .close-m-menu
+        text-align: right
+        margin: 20px 20px 40px 0px
+        font-size: 25px
+.mobile-menu
+    display: none
+.sidebar
+    padding-top: 30px
+.single-widget
+    padding: 15px 0
+    border-bottom: 1px solid $m-dark
+    margin-bottom: 15px
+.widget-title
+    font-weight: 700
+    margin-bottom: 15px
+.menu
+    .sub-menu
+        opacity: 0
+        position: absolute
+        margin-top: 5px
+        z-index: 5
+        transition-duration: 0.5s
+        li
+            display: block
+            background: $m-white
+            width: 180px
+            height: 0px
+            text-align: left
+            padding: 0
+            overflow: hidden
+            margin: 0 !important
+            transition-duration: 0.5s       
+.main-menu
+    .menu-item-has-children
+        position: relative
+        margin-right: 8px
+        &:hover
+            .sub-menu
+                display: block
+                opacity: 1
+            li
+                padding: 13px 0px 13px 10px
+                height: 45px
+        &::after
+            content: "▼"
+            position: absolute
+            right: -12px
+            top: 4px
+            font-size: 10px
+.post-comments
+    margin-top: 20px
+.comment-form
+    p
+        padding: 10px 0
+    textarea, input
+        border: 1px solid $m-dark
+        display: block
+        padding: 8px 5px
+        color: $m-dark
+        font-family: 'Open Sans', sans-serif
+    .submit:hover
+        cursor: pointer
+ol
+    padding: 0
+    margin: 0
+.comment-list
+    li
+        margin: 15px 0px 25px 0px
+        padding: 12px 8px
+        background: $m-white
+        width: 60%
+.comment-author
+    margin-bottom: 8px
+    cite
+        font-weight: 700
+.comment-meta
+    margin-bottom: 8px
+.reply
+    margin: 10px 0 0 0
+.screen-reader-text
+    display: none
+#searchsubmit
+    background: none
+    text-transform: uppercase
+    color: $m-dark
+    vertical-align: baseline
+#searchform
+    #s
+        border-bottom: 1px solid $m-dark
+        color: $m-dark
+        padding-left: 5px
+.pagination
+    text-align: center !important
+    display: block !important
+    margin-top: 10px
+.page404
+    margin-bottom: 150px
+.wp-feautured
+    margin-top: 8px
+
+//Wordpress additional style
+.wp-caption, .wp-caption-text, .sticky, .gallery-caption, .bypostauthor, .alignright, .alignleft, .aligncenter
+    outline: 0
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail 
+	max-width: 100%
+	height: auto
+
+
+@media only screen and (min-width: 1140px)
+    .alignfull, .alignwide
+        margin-bottom: 2em
+    .alignwide
+        margin-left: -100px
+        margin-right: -100px
+        max-width: 1024px
+    .alignfull
+        margin-left: calc( -100vw / 2 + 100% / 2 )
+        margin-right: calc( -100vw / 2 + 100% / 2 )
+        max-width: 100vw
+
+@media screen and (max-width: 767px)
+    p, a, b
+        font-size: 14px
+    .logo
+        font-size: 40px
+        margin: 40px 0 25px 0
+    .social-menu
+        display: none
+    .secondary-menu
+        text-align: center !important
+    .search
+        display: none
+    .main-menu
+        display: none
+    .mobile-menu
+        font-size: 30px
+        padding: 0px 0 20px 0
+        display: block
+    .secondary-menu ul li
+        margin: 0 10px !important
+    .thumbnail img
+        height: 220px
+    .content p
+        font-size: 21px
+    .comment-list
+        li
+            width: 100%
+    .comment-form
+        textarea
+            width: 100%
+        #submit
+            width: 100%
+    .post-thumbnail
+        img
+            height: 200px
+    #wpadminbar
+        position: fixed
